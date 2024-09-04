@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Header from '@/app/component/Navbar';
 
-console.log("Backend URL:>>>>>>>>>>>>>", process.env.NEXT_PUBLIC_BACKEND_URL);
+// console.log("Backend URL:>>>>>>>>>>>>>", process.env.NEXT_PUBLIC_BACKEND_URL);
 
 
 
@@ -155,90 +155,3 @@ export default function Signup() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-// 'use client';
-
-// import React, { useState } from 'react';
-// import { useRouter } from 'next/navigation';
-// import styles from './Signup.module.css';
-
-// export default function Signup() {
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
-//   const [error, setError] = useState('');
-//   const router = useRouter();
-
-//   const handleSubmit = async (event) => {
-//     event.preventDefault();
-//     setError(''); 
-
-//     try {
-//       const response = await fetch('http://localhost:3000/api/signup', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({ email, password }),
-//       });
-
-//       if (response.ok) {
-//         const data = await response.json();
-//         console.log('Signup successful:', data);
-//         router.push('/');
-//       } else {
-//         const errorData = await response.json();
-//         console.error('Signup failed:', errorData);
-//         setError('Signup failed. Please try again.');
-//       }
-//     } catch (error) {
-//       console.error('Error:', error);
-//       setError('An error occurred. Please try again later.');
-//     }
-//   };
-
-//   return (
-//     <main className={styles.main}>
-//       <div className={styles.container}>
-//         <h1 className={styles.heading}>Please signup</h1>
-//         <form className={styles.form} onSubmit={handleSubmit}>
-//           <div className="mb-3">
-//             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-//             <input
-//               type="email"
-//               className="form-control"
-//               id="exampleInputEmail1"
-//               aria-describedby="emailHelp"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//             />
-//           </div>
-//           <div className="mb-3">
-//             <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-//             <input
-//               type="password"
-//               className="form-control"
-//               id="exampleInputPassword1"
-//               value={password}
-//               onChange={(e) => setPassword(e.target.value)}
-//             />
-//           </div>
-//           <button type="submit" className="btn btn-primary">Submit</button>
-//           {error && <p className={styles.error}>{error}</p>}
-//           <div className={styles.loginLink}>
-//             <span>Already a user? </span>
-//             <a href="/auth/login">Login</a>
-//           </div>
-//         </form>
-//       </div>
-//     </main>
-//   );
-// }
