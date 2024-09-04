@@ -1,0 +1,58 @@
+.customcard3 {
+    color: #494747;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: rgba(145, 149, 153, 0.589) 5.95px 5.95px 8px;
+    width: 100%; 
+    margin: auto;
+    max-height: 580px;
+    max-width: 380px; 
+
+ }
+    
+
+.customcard3 .card-header span {
+    font-size: 0.9rem;
+    
+}
+
+.customcard3 .card-header h4 {
+    font-size: 1.5rem;
+}
+
+.customcard3 .card-body {
+    padding: 1.5rem;
+}
+
+.customcard3 .card-body .card-title {
+    font-size: 2.2rem;
+}
+
+.customcard3 .card-body .card-title small {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.customcard3 .card-body .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.customcard3 .card-body .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.btn-outline-light:hover {
+    background-color: #343a40; 
+    color: white; 
+}
+
+@media (max-width: 768px) {
+    .customcard3 .card-body .card-title {
+        font-size: 1.8rem;
+    }
+    .customcard3 .card-body .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}

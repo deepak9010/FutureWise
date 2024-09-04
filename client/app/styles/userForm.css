@@ -1,0 +1,47 @@
+.title{
+    color: red;
+}
+
+.userFormSection{
+    background: #6a11cb;
+
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+
+    height: 130vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userForm{
+    width: 80%;
+    /* height: 50%; */
+    padding: 30px;
+}
+.userImage {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100%;       
+  }
+  
+.imgg{
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .userFormSection {
+        height: 150vh;
+    }
+    .userForm{
+        width: 60%;
+        height: auto;
+        padding: 30px;
+    }
+}

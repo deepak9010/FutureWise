@@ -1,0 +1,116 @@
+.allPlansCard{
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .main-container {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    padding: 20px;
+    color: #494747;
+  }
+  
+  .mainheading {
+    color: #494747;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* .subheading {
+    max-width: 700px;
+  }
+   */
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    max-width: 1000px;
+  
+  }
+  
+  .features span {
+    color: #494747;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bold;
+  }
+  
+  .features h5 i {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .features-section {
+    padding: 2rem;
+    color: #494747;
+    border-radius: 10px;
+    width: 94%;  
+    margin: auto;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* Stacks the columns on smaller screens */
+    }
+  
+    .features h5 {
+        font-size: 0.9em;  /* Adjusts font size for smaller screens */
+        padding: 8px 16px;
+    }
+  
+    .features-section {
+        width: 100%; /* Ensures the section takes full width on smaller screens */
+    }
+  
+    .mainheading h1 {
+        font-size: 1.5rem; /* Adjusts heading size for smaller screens */
+    }
+  }
+  
+  .feature-card {
+    background: #c1b9b924;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .feature-title {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #494747;
+  }
+  
+  .premium-badge {
+    background: #00c7b7;
+    color: rgb(0, 0, 0);
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  
