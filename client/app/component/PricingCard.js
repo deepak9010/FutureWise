@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import '../styles/PricingCard.css';
 
 import { loadStripe } from '@stripe/stripe-js';
@@ -8,7 +9,7 @@ import { loadStripe } from '@stripe/stripe-js';
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
 const PricingCard = ({ title, price, features, isBestForLearning, discount }) => {
-
+    const router = useRouter();
 
     const handleBuy = async () => {
         console.log(`Bought ${title} plan for $${price}`);
@@ -48,7 +49,10 @@ const PricingCard = ({ title, price, features, isBestForLearning, discount }) =>
             });
             if (result.error) {
                 console.error("Payment error:", result.error.message);
-            }
+            }else {
+                 toast.success('Payment is successful!');
+                // router.push('/courses');
+              }
         } catch (error) {
             console.error("Payment processing error:", error.message);
         }

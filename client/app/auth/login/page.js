@@ -59,16 +59,16 @@ export default function Login() {
      <Header/>
    
     <section className={`${styles['vh-100']} ${styles['gradient-custom']}`}>
-      <div className="container py-5 h-100">
+      <div className="container py-5 ">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-12 col-md-8 col-lg-6 col-xl-5">
             <div className="card bg-dark text-white" style={{ borderRadius: '1rem' }}>
-              <div className="card-body p-5 text-center">
+              <div className="card-body p-4 text-center">
 
-                <div className="mb-md-5 mt-md-4 pb-5">
+                <div className="mb-md-1 mt-md-4 pb-2">
 
                   <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
-                  <p className="text-white-50 mb-5">Please enter your login and password!</p>
+                  <p className="text-white-50 mb-3">Please enter your login and password!</p>
 
                   <div data-mdb-input-init className="form-outline form-white mb-4">
                     <input type="email" id="typeEmailX" 
@@ -93,9 +93,9 @@ export default function Login() {
                     <label className="form-label" htmlFor="typePasswordX">Password</label>
                   </div>
 
-                  <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
+                  {/* <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p> */}
 
-                  <button data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-light btn-lg px-5" type="submit" onClick={handleSubmit}>Login</button>
+                  <button data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-light btn-md px-5" type="submit" onClick={handleSubmit}>Login</button>
 
                   {/* <div className="d-flex justify-content-center text-center mt-4 pt-1">
                     <a href="#!" className="text-white">
@@ -108,13 +108,13 @@ export default function Login() {
                       <FontAwesomeIcon icon={faGoogle} size="lg" />
                     </a>
                   </div> */}
-                   <div className="d-flex align-items-center my-4">
+                   <div className="d-flex align-items-center my-2">
                       <hr className="flex-grow-1" />
                       <span className="mx-2">or</span>
                       <hr className="flex-grow-1" />
                     </div>
 
-                    <div className="d-flex justify-content-center text-center mt-4 pt-1">
+                    <div className="d-flex justify-content-center text-center mt-2 pt-1">
                       <button
                         onClick={() => window.location.href = `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/google`}
                         className="btn btn-outline-light btn-lg px-5 d-flex align-items-center"
