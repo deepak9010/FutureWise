@@ -98,7 +98,7 @@ export default function Plans() {
     </div>
     <PricingSection />
     <section className="features-section text-white">
-      <h2 className="text-gray fw-bold text-center mt-3">Why Shiksha Mitra?</h2>
+      <h2 className="text-gray fw-bold text-center mt-3">Why FutureWise?</h2>
       <hr />
       <div className="features-grid">
         <div className="feature-card">

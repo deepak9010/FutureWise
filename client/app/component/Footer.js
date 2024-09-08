@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-5" style={{ width: '100%' }}>
           <div className="col footer-col" >
             <h5 className="text-uppercase mb-4 footer-center" >
-            Shiksha Mitra
+            FutureWise
             </h5>
             <p  className="footer-center">Learn in-demand tech skills in half the time</p>
           </div>

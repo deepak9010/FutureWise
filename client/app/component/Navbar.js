@@ -107,7 +107,7 @@ export default function Header() {
                         <img src="/favicon.png" alt="favicon" width="25" height="25" className="mr-2 logo" />
                         <span className="ml-2">
                             <Link href="/" legacyBehavior>
-                                <a className="text-white Logoname" style={{ textDecoration: 'none', marginLeft: '10px' }}>Shiksha Mitra</a>
+                                <a className="text-white Logoname" style={{ textDecoration: 'none', marginLeft: '10px' }}>FutureWise</a>
                             </Link>
                         </span>
                     </div>

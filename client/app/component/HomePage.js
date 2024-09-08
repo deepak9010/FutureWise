@@ -81,7 +81,7 @@ export default function HomePage() {
         <div className="container py-5 px-4">
           <header className="text-center">
             <h2 className="display-4 font-weight-bold text-success text-white">
-              Achieve Your Goals With Shiksha Mitra
+              Achieve Your Goals With FutureWise
             </h2>
             <p className="lead text-success mt-4 mx-auto text-white" style={{ maxWidth: "36rem" }}>
               Unlock your full potential through CourseX's diverse courses and expert guidance. Success awaits you!
