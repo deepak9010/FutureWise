@@ -34,7 +34,8 @@ export default function UserProfileForm() {
     subscription_type: '',
     address: '',
     city: '',
-    country: ''
+    country: '',
+    imgURL:'',
   });
 
   // Function to fetch user data from the API
@@ -47,7 +48,7 @@ export default function UserProfileForm() {
       const result = await response.json();
 
 
-      console.log(result.data);
+      // console.log("all fetch datata",result.data);
       // Check if the response has data and update state
       if (result.data) {
         setUserData({
@@ -59,10 +60,12 @@ export default function UserProfileForm() {
           subscription_type: result.data.subscription_type || '',
           address: result.data.address || '',
           city: result.data.city || '',
-          country: result.data.country || ''
+          country: result.data.country || '',
+          imgURL: result.data.imgURL || '',
         });
         // setAwsImageUrl(result.data.imgURL || null);
       }
+     
     } catch (error) {
       console.error('Error fetching user data:', error);
     }
@@ -198,7 +201,7 @@ export default function UserProfileForm() {
     const userUID = localStorageUserData ? localStorageUserData.UID : null;
     setUID(userUID); // Set UID state
   }, []);
-  console.log("update profile UID", UID);
+  // console.log("update profile UID", UID);
 
 
   // Call fetchUserData inside useEffect when the component mounts
@@ -215,6 +218,7 @@ export default function UserProfileForm() {
   }, [pathname]);
 
 
+  console.log("imgURLllll",userData.imgURL);
 
   return (
     <section className='userFormSection'>
@@ -225,7 +229,8 @@ export default function UserProfileForm() {
             <div className='col'>
               <div className="userImage">
                 <Image
-                  src={Img}
+                  // src={Img}
+                  src={userData.imgURL ? userData.imgURL : Img}
                   alt="Profile Image"
                   className="imgg"
                   width={80}
