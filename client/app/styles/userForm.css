@@ -34,7 +34,12 @@
     border-radius: 50%; 
     object-fit: cover;
 }
-
+.profilePicture{
+    margin-top: 10px; 
+   margin-left: 10px;
+   width: 300px;
+    /* margin-bottom: 10px; */
+}
 @media (max-width: 768px) {
     .userFormSection {
         height: 150vh;
