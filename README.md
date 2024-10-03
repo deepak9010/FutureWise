@@ -2,30 +2,32 @@
 
 https://github.com/user-attachments/assets/14df688c-51a0-4b35-b17d-8d4a9f1b138e
 
- Tech stack
-Frontend :
--> NextJS, BootStrap
+Demo website : 
+# Full Stack-Education-platform-complete-project
+A Full stack based project on eduactional courses application. It is completely working project. Its' completely responsive application.
+MYSQl NextJS Bootstrap Express  NodeJs are user in this project.
 
-Backend :
--> nodejs expressjs  jwt
+# Featurs included in this project:
 
-Databases:
--> Mysql
+**user features:**
+ - register and login users. 
+ - email verification and mobile Otp verification compulsory for a user for login.
+ - User can do payment using Stripe for subscription (Silver, Gold).
+ - User can update their profile.
+ - Use AWS S3 bucket for upload profile picture
+ - User can download their profile in pdf format
+ - search other users by username.
+ - User can add courses.
 
+**Services Used:**
+ - Nodemailer for send emails.
+ - Twilio for send OTPs.
+ - AWS S3 bucket for upload profile Pic.
 
-Payment Management:
--> Stripe
+**What you need to run this application:**
 
-Other Services
-->Nodemailer for send emails
--> Twilio for send OTPs
--> AWS S3 bucket for upload profile Pic
--> 
+ - MySQL 
+ - NodeJS
+ - NextJS
+ - NPM
 
-Feature:-
--> User can sign up with email and password and also with google
--> email verification and mobile Otp verification compulsory for a user for login
--> User can do payment using Stripe for subscription (Silver, Gold)
--> User can update their profile. Use AWS  S3 bucket for upload profile picture
--> User can download their profile in pdf format
--> User can add courses
