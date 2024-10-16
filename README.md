@@ -16,7 +16,6 @@ MYSQl NextJS Bootstrap Express  NodeJs are user in this project.
  - User can update their profile.
  - Use AWS S3 bucket for upload profile picture
  - User can download their profile in pdf format
- - search other users by username.
  - User can add courses.
 
 **Services Used:**
